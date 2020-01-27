@@ -1,9 +1,9 @@
 package com.github.yeriomin.tokendispenser;
 
-import com.github.yeriomin.playstoreapi.AuthException;
-import com.github.yeriomin.playstoreapi.GooglePlayAPI;
-import com.github.yeriomin.playstoreapi.GooglePlayException;
-import com.github.yeriomin.playstoreapi.HttpClientAdapter;
+import com.dragons.aurora.playstoreapiv2.AuthException;
+import com.dragons.aurora.playstoreapiv2.GooglePlayAPI;
+import com.dragons.aurora.playstoreapiv2.GooglePlayException;
+import com.dragons.aurora.playstoreapiv2.HttpClientAdapter;
 import okhttp3.*;
 
 import java.io.IOException;
