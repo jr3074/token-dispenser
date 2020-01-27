@@ -66,7 +66,7 @@ public class TokenAc2dmResource {
     }
 
     protected String getToken(String email, String aasToken) throws IOException {
-        return getApi(device).generateToken(email, aasToken);
+        return getApi().generateToken(email, aasToken);
     }
 
 }
