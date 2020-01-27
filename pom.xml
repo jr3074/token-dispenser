@@ -22,9 +22,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.yeriomin</groupId>
-            <artifactId>play-store-api</artifactId>
-            <version>0.44.2</version>
+            <groupId>com.github.whyorean</groupId>
+            <artifactId>playstore-api-v2</artifactId>
+            <version>2.5</version>
         </dependency>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
