@@ -1,8 +1,8 @@
 package com.github.yeriomin.tokendispenser;
 
-import com.github.yeriomin.playstoreapi.GooglePlayAPI;
-import com.github.yeriomin.playstoreapi.GooglePlayException;
-import com.github.yeriomin.playstoreapi.PropertiesDeviceInfoProvider;
+import com.dragons.aurora.playstoreapiv2.GooglePlayAPI;
+import com.dragons.aurora.playstoreapiv2.GooglePlayException;
+import com.dragons.aurora.playstoreapiv2.PropertiesDeviceInfoProvider;
 
 import java.io.IOException;
 import java.util.Locale;
