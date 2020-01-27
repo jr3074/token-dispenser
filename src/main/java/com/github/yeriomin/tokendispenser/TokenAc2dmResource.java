@@ -18,14 +18,14 @@ public class TokenAc2dmResource {
 
     public String handle(Request request, Response response) {
         String email = request.params("email");
-        String password = Server.passwords.get(email);
-        if (null == password || password.isEmpty()) {
+        String aasToken = Server.passwords.get(email);
+        if (null == aasToken || aasToken.isEmpty()) {
             halt(404, "No password for this email");
         }
         int code = 500;
         String message;
         try {
-            return getToken(email, password);
+            return getToken(email, aasToken);
         } catch (GooglePlayException e) {
             if (e.getCode() >= 400) {
                 code = e.getCode();
@@ -65,8 +65,8 @@ public class TokenAc2dmResource {
         return api;
     }
 
-    protected String getToken(String email, String password) throws IOException {
-        return getApi().generateAC2DMToken(email, password);
+    protected String getToken(String email, String aasToken) throws IOException {
+        return getApi(device).generateToken(email, aasToken);
     }
 
 }
