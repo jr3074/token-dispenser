@@ -26,8 +26,9 @@ public class TokenAc2dmGsfIdResource extends TokenAc2dmResource {
         int code = 500;
         String message;
         try {
-            String token = getApi(device).generateToken(email, aasToken);
-            return token;
+		String token = getApi(device).generateToken(email, aasToken);
+		String gsfId = getApi(device).generateGsfId();
+		return token + " " + gsfId;
         } catch (GooglePlayException e) {
             if (e.getCode() >= 400) {
                 code = e.getCode();
